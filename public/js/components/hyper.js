@@ -52,16 +52,23 @@ var _Header = __webpack_require__(13);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _TopImg = __webpack_require__(14);
+
+var _TopImg2 = _interopRequireDefault(_TopImg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
-  return (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions });
+  return (0, _hyperapp.h)(
+    'div',
+    { 'class': 'app' },
+    (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions })
+  );
 }
-
-// <Button state={state} actions={actions}/>
 
 /***/ }),
 /* 11 */
@@ -97,9 +104,42 @@ function Header(_ref) {
       actions = _ref.actions;
 
   return (0, _hyperapp.h)(
-    'header',
+    "header",
     null,
-    'Header comp'
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "logo" },
+      "Logo"
+    ),
+    (0, _hyperapp.h)(
+      "nav",
+      null,
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Menu"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Party Platter"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Locations"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Reservations"
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "Rewards"
+      )
+    )
   );
 }
 // <Header state={state} actions={actions}/>
@@ -107,6 +147,73 @@ function Header(_ref) {
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = TopImg;
+
+var _hyperapp = __webpack_require__(0);
+
+function TopImg(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { "class": "TopImg" },
+    (0, _hyperapp.h)(
+      "h5",
+      null,
+      "Welcome"
+    ),
+    (0, _hyperapp.h)(
+      "h1",
+      null,
+      "Leftovers"
+    ),
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "contact-info" },
+      (0, _hyperapp.h)(
+        "div",
+        null,
+        " Book Table Directly "
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "(718) - 642 - 9542"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "hours" },
+        "Opening Hours ",
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          " Mon - Fri:"
+        ),
+        " 9am -9pm",
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          " Weekend: "
+        ),
+        " 9am -1am"
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -153,4 +260,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[14]);
+],[15]);
