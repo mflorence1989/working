@@ -1,0 +1,49 @@
+.TopImg{
+  position: relative;
+  background: black;
+  height: 500px;
+  background: url("https://cdn.vox-cdn.com/thumbor/vVVGv6NnDl8R6vJffI7YRWUesPE=/0x0:5456x3955/1200x900/filters:focal(2292x1542:3164x2414)/cdn.vox-cdn.com/uploads/chorus_image/image/58262539/Compere_Lapin_Dining_Room.0.0.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  
+  .title{
+    padding: 200px 0 80px;
+    text-align: right;
+    h1{
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 4rem;
+      font-family: $displayFont;
+    }
+
+    h5{
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+    }
+  }
+  .contact-info{
+    //position: absolute;
+    //bottom: 0;
+    //right: 0;
+    text-align: right;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    strong{
+      font-weight: 700;
+    }
+
+    .booking{
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+}
