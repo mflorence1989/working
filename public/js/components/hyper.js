@@ -167,21 +167,25 @@ function TopImg(_ref) {
     "section",
     { "class": "TopImg" },
     (0, _hyperapp.h)(
-      "h5",
-      null,
-      "Welcome"
-    ),
-    (0, _hyperapp.h)(
-      "h1",
-      null,
-      "Leftovers"
+      "div",
+      { "class": "title" },
+      (0, _hyperapp.h)(
+        "h5",
+        null,
+        "Welcome"
+      ),
+      (0, _hyperapp.h)(
+        "h1",
+        null,
+        "Leftovers"
+      )
     ),
     (0, _hyperapp.h)(
       "div",
       { "class": "contact-info" },
       (0, _hyperapp.h)(
         "div",
-        null,
+        { "class": "booking" },
         " Book Table Directly "
       ),
       (0, _hyperapp.h)(
