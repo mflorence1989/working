@@ -108,36 +108,40 @@ function Header(_ref) {
     null,
     (0, _hyperapp.h)(
       "div",
-      { "class": "logo" },
-      "Logo"
-    ),
-    (0, _hyperapp.h)(
-      "nav",
-      null,
+      { "class": "container" },
       (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Menu"
+        "div",
+        { "class": "logo" },
+        "Logo"
       ),
       (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Party Platter"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Locations"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Reservations"
-      ),
-      (0, _hyperapp.h)(
-        "a",
-        { href: "#" },
-        "Rewards"
+        "nav",
+        null,
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Menu"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Party Platter"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Locations"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reservations"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Rewards"
+        )
       )
     )
   );
@@ -168,47 +172,51 @@ function TopImg(_ref) {
     { "class": "TopImg" },
     (0, _hyperapp.h)(
       "div",
-      { "class": "title" },
-      (0, _hyperapp.h)(
-        "h5",
-        null,
-        "Welcome"
-      ),
-      (0, _hyperapp.h)(
-        "h1",
-        null,
-        "Leftovers"
-      )
-    ),
-    (0, _hyperapp.h)(
-      "div",
-      { "class": "contact-info" },
+      { "class": "container" },
       (0, _hyperapp.h)(
         "div",
-        { "class": "booking" },
-        " Book Table Directly "
-      ),
-      (0, _hyperapp.h)(
-        "h2",
-        null,
-        "(718) - 642 - 9542"
+        { "class": "title" },
+        (0, _hyperapp.h)(
+          "h5",
+          null,
+          "Welcome"
+        ),
+        (0, _hyperapp.h)(
+          "h1",
+          null,
+          "Leftovers"
+        )
       ),
       (0, _hyperapp.h)(
         "div",
-        { "class": "hours" },
-        "Opening Hours ",
+        { "class": "contact-info" },
         (0, _hyperapp.h)(
-          "strong",
-          null,
-          " Mon - Fri:"
+          "div",
+          { "class": "booking" },
+          " Book Table Directly "
         ),
-        " 9am -9pm",
         (0, _hyperapp.h)(
-          "strong",
+          "h2",
           null,
-          " Weekend: "
+          "(718) - 642 - 9542"
         ),
-        " 9am -1am"
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "hours" },
+          "Opening Hours ",
+          (0, _hyperapp.h)(
+            "strong",
+            null,
+            " Mon - Fri:"
+          ),
+          " 9am -9pm",
+          (0, _hyperapp.h)(
+            "strong",
+            null,
+            " Weekend: "
+          ),
+          " 9am -1am"
+        )
       )
     )
   );

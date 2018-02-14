@@ -3,6 +3,7 @@ import {h, app} from 'hyperapp'
 export default function TopImg({state, actions}) {
   return (
   <section class="TopImg">
+  <div class="container">
   <div class="title">
   <h5>
   Welcome
@@ -19,7 +20,7 @@ export default function TopImg({state, actions}) {
   <strong> Weekend: </strong> 9am -1am
   </div>
   </div>
-
+</div>
   </section>
   )
 }

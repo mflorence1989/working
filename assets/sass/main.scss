@@ -1,8 +1,7 @@
-$textFont:'Ubuntu Condensed', sans-serif;
-$displayFont:'Dosis', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
-
+@import "variables";
+@import "grid";
 @import "reset";
 @import "Header";
 @import "TopImg";
