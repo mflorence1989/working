@@ -268,7 +268,7 @@ function SpecialMenu(_ref) {
       ),
       (0, _hyperapp.h)(
         "div",
-        { "class": "row" },
+        { "class": "row boxes" },
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-4" },
@@ -300,17 +300,63 @@ function SpecialMenu(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-4" },
-          "box"
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "box" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "box-img" },
+              "  ",
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "price-circle" },
+                "$25"
+              )
+            ),
+            (0, _hyperapp.h)(
+              "span",
+              { "class": "title" },
+              "Super BBQ Grill NO FUMA "
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              { "class": "details" },
+              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
+            )
+          )
         ),
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-4" },
-          "box"
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "box" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "box-img" },
+              "  ",
+              (0, _hyperapp.h)(
+                "div",
+                { "class": "price-circle" },
+                "$25"
+              )
+            ),
+            (0, _hyperapp.h)(
+              "span",
+              { "class": "title" },
+              "Super BBQ Grill NO FUMA "
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              { "class": "details" },
+              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
+            )
+          )
         )
       ),
       (0, _hyperapp.h)(
         "a",
-        { href: "#" },
+        { href: "#", "class": "link" },
         "View Full Menu "
       )
     )
