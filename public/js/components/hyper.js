@@ -218,7 +218,7 @@ function OurStory(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-6" },
-          (0, _hyperapp.h)("img", { src: "" })
+          (0, _hyperapp.h)("div", { "class": "video-img" })
         )
       )
     )

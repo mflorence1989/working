@@ -13,7 +13,8 @@ export default function OurStory({state, actions}) {
     <a href="#" class="reserve-btn">Reserve</a>
     </div>
     <div class="col-md-6">
-    <img src=""/>
+    <div class="video-img">
+    </div>
     </div>
     </div>
     </div>
