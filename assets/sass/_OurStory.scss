@@ -2,27 +2,27 @@
   padding: 100px 0;
 
   .quote{
-    color: grey;
+    color: $paragraphColor;
     margin: .5rem 0 3rem;
     strong{
       font-weight: 700;
-      color: black;
+      color: $black;
     }
   }
   .reserve-btn{
     padding: 20px 40px;
     //min-width: 200px;
     display: inline-block;
-    border: 1px solid #000;
+    border: 1px solid $black;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: $black;
     text-transform: uppercase;
     font-family: $displayFont;
     transition: all .5s ease-in-out;
     &:hover{
-      background: orange;
-      color: black;
+      background: $red;
+      color: white;
     }
   }
   .video-img{
