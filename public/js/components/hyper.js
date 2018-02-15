@@ -253,7 +253,24 @@ function SpecialMenu(_ref) {
   return (0, _hyperapp.h)(
     "section",
     { id: "SpecialMenu" },
-    (0, _hyperapp.h)("div", { "class": "container" })
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)("h5", null),
+      (0, _hyperapp.h)("h2", null),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "row" },
+        (0, _hyperapp.h)("div", { "class": "col-md-4" }),
+        (0, _hyperapp.h)("div", { "class": "col-md-4" }),
+        (0, _hyperapp.h)("div", { "class": "col-md-4" })
+      ),
+      (0, _hyperapp.h)(
+        "a",
+        { href: "#" },
+        "View Full Menu"
+      )
+    )
   );
 }
 // <Header state={state} actions={actions}/>
