@@ -52,7 +52,7 @@ var _Header = __webpack_require__(13);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(16);
+var _TopImg = __webpack_require__(17);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
@@ -60,9 +60,13 @@ var _OurStory = __webpack_require__(14);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(15);
+var _SpecialMenu = __webpack_require__(16);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
+var _RandomQuote = __webpack_require__(15);
+
+var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -76,7 +80,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions })
   );
 }
 
@@ -242,6 +247,48 @@ function OurStory(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = RandomQuote;
+
+var _hyperapp = __webpack_require__(0);
+
+function RandomQuote(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'RandomQuote', style: {
+        background: 'url("http://www.spice-root.com/wp-content/uploads/2015/08/6817694-free-spices-wallpaper.jpg")'
+      } },
+    (0, _hyperapp.h)(
+      'div',
+      { 'class': 'container' },
+      (0, _hyperapp.h)(
+        'h1',
+        null,
+        '"Sometimes the best chef aint the fattest bitch in the room"'
+      ),
+      (0, _hyperapp.h)(
+        'span',
+        { 'class': 'author' },
+        ' - Papa De Fuego'
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = SpecialMenu;
 
 var _hyperapp = __webpack_require__(0);
@@ -366,7 +413,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -445,7 +492,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -492,4 +539,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[17]);
+],[18]);
