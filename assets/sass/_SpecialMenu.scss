@@ -1,10 +1,10 @@
 #SpecialMenu{
   padding: 100px 0;
-  background: url("https://n6-img-fp.akamaized.net/free-vector/white-canvas-background_1053-239.jpg?size=338&ext=jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
+  background: $greyBG;
+  //background: url("https://n6-img-fp.akamaized.net/free-vector/white-canvas-background_1053-239.jpg?size=338&ext=jpg");
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
   background-position: center;
   background-repeat: repeat;
   h2,h5{
@@ -52,7 +52,8 @@
         font-weight: 300;
         font-size: 0.8rem;
         text-align: center;
-        line-height: 1.5;
+        line-height: 2;
+        margin:0;
       }
     }
     .boxes{

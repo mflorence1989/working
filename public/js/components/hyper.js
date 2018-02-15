@@ -400,7 +400,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "Leftovers"
+          "LEFTOVERS"
         )
       ),
       (0, _hyperapp.h)(
@@ -408,30 +408,34 @@ function TopImg(_ref) {
         { "class": "contact-info" },
         (0, _hyperapp.h)(
           "div",
-          { "class": "booking" },
-          " Book Table Directly "
-        ),
-        (0, _hyperapp.h)(
-          "h2",
-          null,
-          "(718) - 642 - 9542"
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "hours" },
-          "Opening Hours ",
+          { "class": "container" },
           (0, _hyperapp.h)(
-            "strong",
-            null,
-            " Mon - Fri:"
+            "div",
+            { "class": "booking" },
+            " Book Table Directly "
           ),
-          " 9am -9pm",
           (0, _hyperapp.h)(
-            "strong",
+            "h2",
             null,
-            " Weekend: "
+            "(718) - 642 - 9542"
           ),
-          " 9am -1am"
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "hours" },
+            "Opening Hours ",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              " Mon - Fri:"
+            ),
+            " 9am -9pm",
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              " Weekend: "
+            ),
+            " 9am -1am"
+          )
         )
       )
     )

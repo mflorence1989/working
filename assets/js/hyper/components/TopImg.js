@@ -9,15 +9,18 @@ export default function TopImg({state, actions}) {
   Welcome
   </h5>
   <h1>
-  Leftovers
+  LEFTOVERS
   </h1>
   </div>
+
   <div class="contact-info">
+  <div class="container">
   <div class="booking"> Book Table Directly </div>
   <h2>(718) - 642 - 9542</h2>
   <div class="hours">
   Opening Hours <strong> Mon - Fri:</strong> 9am -9pm
   <strong> Weekend: </strong> 9am -1am
+  </div>
   </div>
   </div>
 </div>

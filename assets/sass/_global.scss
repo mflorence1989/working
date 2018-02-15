@@ -1,12 +1,16 @@
+body{
+  color: $black;
+}
 h2{
   font-size: 3rem;
   font-family: $displayFont;
   margin: .5rem 0 3rem;
   text-transform: capitalize;
+  color: $black;
 }
 
 h5{
-  color: grey;
+  color: $titleColor;
   font-size: 0.9rem;
   margin: .5rem 0 1rem;
   text-transform: uppercase;
@@ -14,7 +18,14 @@ h5{
 }
   p{
     font-size: 1.1rem;
-    color: grey;
+    color: $paragraphColor;
     line-height: 1.8;
     margin: .5rem 0 3rem;
+    font-weight: 300;
+  }
+  a{
+    transition: all .5s ease-in-out;
+    &:hover{
+      color: black;
+    }
   }
