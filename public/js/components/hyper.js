@@ -48,21 +48,29 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(13);
+var _Header = __webpack_require__(14);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(16);
+var _TopImg = __webpack_require__(18);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(14);
+var _OurStory = __webpack_require__(15);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(15);
+var _SpecialMenu = __webpack_require__(17);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
+
+var _RandomQuote = __webpack_require__(16);
+
+var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
+
+var _ContactUs = __webpack_require__(13);
+
+var _ContactUs2 = _interopRequireDefault(_ContactUs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -76,7 +84,9 @@ function App(_ref) {
     (0, _hyperapp.h)(_Header2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_TopImg2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions })
   );
 }
 
@@ -97,6 +107,123 @@ var globalState = exports.globalState = {
 /***/ }),
 /* 12 */,
 /* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ContactUs;
+
+var _hyperapp = __webpack_require__(0);
+
+function ContactUs(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { id: "ContactUs" },
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "h5",
+        { "class": "comp-title" },
+        "Contact Us"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "Delicious Flavour Of Autumn"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "box" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "row" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "col-md-6" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "title" },
+              "Philadelphia,Pa"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { "class": "Address" },
+              "900 Bridge Street",
+              (0, _hyperapp.h)("br", null),
+              "Summerdale,Pa 19124"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              (0, _hyperapp.h)(
+                "strong",
+                null,
+                "email: "
+              ),
+              " ",
+              (0, _hyperapp.h)(
+                "a",
+                { href: "mailto:@leftovers.com" },
+                "leftovers.com"
+              )
+            )
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "col-md-6" },
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Phone:"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "title" },
+              "(267) - 642 - 9542"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Lunch Service:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Friday, Saturday and Sunday",
+              (0, _hyperapp.h)("br", null),
+              "from 12pm - 130pm"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Dinner Service:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Daily",
+              (0, _hyperapp.h)("br", null),
+              "from 6pm - 11pm"
+            )
+          )
+        )
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -160,7 +287,7 @@ function Header(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -233,7 +360,49 @@ function OurStory(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 15 */
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = RandomQuote;
+
+var _hyperapp = __webpack_require__(0);
+
+function RandomQuote(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    'section',
+    { id: 'RandomQuote', style: {
+        background: 'url("http://www.spice-root.com/wp-content/uploads/2015/08/6817694-free-spices-wallpaper.jpg")'
+      } },
+    (0, _hyperapp.h)(
+      'div',
+      { 'class': 'container' },
+      (0, _hyperapp.h)(
+        'h1',
+        null,
+        '"Sometimes the best chef aint the fattest bitch in the room"'
+      ),
+      (0, _hyperapp.h)(
+        'span',
+        { 'class': 'author' },
+        ' - Papa De Fuego'
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -366,7 +535,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -445,7 +614,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -492,4 +661,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[17]);
+],[19]);

@@ -1,28 +1,13 @@
 import {h, app} from 'hyperapp'
 
-export default function TopImg({state, actions}) {
+export default function RandomQuote({state, actions}) {
   return (
-  <section id="TopImg">
+  <section id="RandomQuote" style={{
+    background: 'url("http://www.spice-root.com/wp-content/uploads/2015/08/6817694-free-spices-wallpaper.jpg")'
+  }}>
   <div class="container">
-  <div class="title">
-  <h5>
-  Welcome
-  </h5>
-  <h1>
-  LEFTOVERS
-  </h1>
-  </div>
-
-  <div class="contact-info">
-  <div class="container">
-  <div class="booking"> Book Table Directly </div>
-  <h2>(718) - 642 - 9542</h2>
-  <div class="hours">
-  Opening Hours <strong> Mon - Fri:</strong> 9am -9pm
-  <strong> Weekend: </strong> 9am -1am
-  </div>
-  </div>
-  </div>
+<h1>"Sometimes the best chef aint the fattest bitch in the room"</h1>
+<span class="author"> - Papa De Fuego</span>
 </div>
   </section>
   )
