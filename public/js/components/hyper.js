@@ -138,6 +138,83 @@ function ContactUs(_ref) {
         "h2",
         null,
         "Delicious Flavour Of Autumn"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "box" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "row" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "col-md-6" },
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "title" },
+              "Philadelphia,Pa"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { "class": "Address" },
+              "900 Bridge Street",
+              (0, _hyperapp.h)("br", null),
+              "Summerdale,Pa 19124"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              (0, _hyperapp.h)(
+                "strong",
+                null,
+                "email: "
+              ),
+              " ",
+              (0, _hyperapp.h)(
+                "a",
+                { href: "mailto:@leftovers.com" },
+                "leftovers.com"
+              )
+            )
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "col-md-6" },
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Phone:"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "title" },
+              "(267) - 642 - 9542"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Lunch Service:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Friday, Saturday and Sunday",
+              (0, _hyperapp.h)("br", null),
+              "from 12pm - 130pm"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              null,
+              "Dinner Service:"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              "Daily",
+              (0, _hyperapp.h)("br", null),
+              "from 6pm - 11pm"
+            )
+          )
+        )
       )
     )
   );
