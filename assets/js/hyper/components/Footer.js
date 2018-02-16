@@ -14,7 +14,7 @@ export default function Footer({state, actions}) {
 
   <ul class="social-media">
   <li>
-  <a href="http://www.facebook.com" target= "new"><i class="fab fa-facebook-square"></i></a>
+  <a href="http://www.facebook.com" target= "new"><i class="fas fa-camera-retro"></i></a>
   </li>
 
   <li>
