@@ -6,11 +6,11 @@ export default function Header({state, actions}) {
   <div class="container">
   <div class="logo">Logo</div>
   <nav>
-  <a href="#">Menu</a>
-  <a href="#">Party Platter</a>
-  <a href="#">Locations</a>
+  <a href="#">Our Story</a>
+  <a href="#">Special Menu</a>
+  <a href="#">Reviews</a>
   <a href="#">Reservations</a>
-  <a href="#">Rewards</a>
+  <a href="#">Contact Us</a>
   </nav>
 </div>
   </header>
