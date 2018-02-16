@@ -48,23 +48,23 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(14);
+var _Header = __webpack_require__(15);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(19);
+var _TopImg = __webpack_require__(20);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(15);
+var _OurStory = __webpack_require__(16);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(18);
+var _SpecialMenu = __webpack_require__(19);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
 
-var _RandomQuote = __webpack_require__(16);
+var _RandomQuote = __webpack_require__(17);
 
 var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
 
@@ -72,9 +72,13 @@ var _ContactUs = __webpack_require__(13);
 
 var _ContactUs2 = _interopRequireDefault(_ContactUs);
 
-var _Reviews = __webpack_require__(17);
+var _Reviews = __webpack_require__(18);
 
 var _Reviews2 = _interopRequireDefault(_Reviews);
+
+var _Footer = __webpack_require__(14);
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -91,7 +95,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Footer2.default, { state: state, actions: actions })
   );
 }
 
@@ -237,6 +242,111 @@ function ContactUs(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = Footer;
+
+var _hyperapp = __webpack_require__(0);
+
+function Footer(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "footer",
+    null,
+    (0, _hyperapp.h)(
+      "div",
+      { "class": "container" },
+      (0, _hyperapp.h)(
+        "nav",
+        { "class": "menu" },
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Our Story"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Special Menu"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reviews"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reservations"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Contact Us"
+        )
+      ),
+      (0, _hyperapp.h)(
+        "ul",
+        { "class": "social-media" },
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "http://www.facebook.com", target: "new" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-facebook-square" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "http://www.twitter.com", target: "new" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-twitter-square" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "http://www.google.com", target: "new" },
+            (0, _hyperapp.h)("i", { "class": "fab fa-google-plus-g" })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)(
+            "a",
+            { href: "http://www.youtube.com", target: "new" },
+            "  ",
+            (0, _hyperapp.h)("i", { "class": "fab fa-youtube-play" })
+          )
+        )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "copyright" },
+        "\u24B8 2018 Copyright"
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = Header;
 
 var _hyperapp = __webpack_require__(0);
@@ -262,17 +372,17 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Menu"
+          "Our Story"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Party Platter"
+          "Special Menu"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Locations"
+          "Reviews"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -282,7 +392,7 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Rewards"
+          "Contact Us"
         )
       )
     )
@@ -292,7 +402,7 @@ function Header(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -365,7 +475,7 @@ function OurStory(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -407,7 +517,7 @@ function RandomQuote(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -495,7 +605,7 @@ function Reviews(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -628,7 +738,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -707,7 +817,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -754,4 +864,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[20]);
+],[21]);
