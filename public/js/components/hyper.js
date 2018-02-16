@@ -110,15 +110,15 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var globalState = exports.globalState = {
-  count: 0,
-  companyInfo: companyInfo
-};
-
 var companyInfo = {
   title: 'LeftOvers',
   phone: '267-642-9542',
   location: 'Philadelphia,PA'
+};
+
+var globalState = exports.globalState = {
+  count: 0,
+  companyInfo: companyInfo
 };
 
 /***/ }),
@@ -168,7 +168,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "Philadelphia,Pa"
+              state.companyInfo.location
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -204,7 +204,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "(267) - 642 - 9542"
+              state.companyInfo.phone
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -779,7 +779,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "LEFTOVERS"
+          state.companyInfo.title
         )
       ),
       (0, _hyperapp.h)(
@@ -847,7 +847,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _hyperapp.app)({
-  state: { globalState: _globalState.globalState },
+  state: _globalState.globalState,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },
