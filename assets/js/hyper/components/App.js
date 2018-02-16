@@ -5,6 +5,7 @@ import OurStory from './OurStory.js'
 import SpecialMenu from './SpecialMenu.js'
 import RandomQuote from './RandomQuote.js'
 import ContactUs from './ContactUs.js'
+import Reviews from './Reviews.js'
 export default function App({state, actions}) {
   return (
     <div class={'app'}>
@@ -14,6 +15,7 @@ export default function App({state, actions}) {
     <SpecialMenu state={state} actions={actions}/>
     <RandomQuote state={state} actions={actions}/>
     <ContactUs state={state} actions={actions}/>
+    <Reviews state={state} actions={actions}/>
     </div>
   )
 }

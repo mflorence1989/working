@@ -17,9 +17,9 @@ h5{
   letter-spacing: 5px;
 }
   p{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     color: $paragraphColor;
-    line-height: 1.8;
+    line-height: 2;
     margin: .5rem 0 3rem;
     font-weight: 300;
   }
@@ -29,4 +29,10 @@ h5{
       color: black;
     }
 
+  }
+  strong{
+    font-weight: 600;
+  }
+  em{
+    font-style:italic;
   }

@@ -4,25 +4,26 @@ export default function Reviews({state, actions}) {
   return (
   <section id="Reviews">
   <div class="container">
-  <div class="title">
-  <h5>
-  Welcome
-  </h5>
-  <h1>
-  LEFTOVERS
-  </h1>
-  </div>
+  <div class="row">
+  <div class="col-md-8 side-img">
+  <div class="side-img">
 
-  <div class="contact-info">
-  <div class="container">
-  <div class="booking"> Book Table Directly </div>
-  <h2>(718) - 642 - 9542</h2>
-  <div class="hours">
-  Opening Hours <strong> Mon - Fri:</strong> 9am -9pm
-  <strong> Weekend: </strong> 9am -1am
+  <img src="https://stjohnsmontgomery.org/wp-content/uploads/chef.gif"/>
+</div>
   </div>
-  </div>
-  </div>
+  <div class="col-md-4">
+<h5 class="comp-title">Reviews</h5>
+<h2>The Food Network</h2>
+<h4>"Best Restaurant in Philadelphia area"</h4>
+<p>1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway </p>
+<div class="author"><strong>OG ROE</strong> -<em> Winner of the chef masters.</em></div>
+<div class="arrows">
+<i class="fa fa-arrow-left" aria-hidden="true"></i>
+<i class="fa fa-arrow-right ready" aria-hidden="true"></i>
+</div>
+</div>
+</div>
+
 </div>
   </section>
   )
