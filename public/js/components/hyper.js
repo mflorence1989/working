@@ -116,9 +116,72 @@ var companyInfo = {
   location: 'Philadelphia,PA'
 };
 
+var specialMenuData = [{
+  title: 'Super BBQ Grill NO FUMA ',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}, {
+  title: 'Fried Lamb Chops',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}, {
+  title: 'Baked Chicken',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}];
+
+var reviews = [{
+  company: 'The Food Network',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexil,lologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'NBC',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'Bet',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'ABC',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'CBS',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}];
+
+var randomQuote = [{
+  author: 'Chef Mario',
+  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+}, {
+  author: 'Chef Mario',
+  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+}, {
+  author: 'Chef Tailas',
+  quote: 'Good Grub'
+}, {
+  author: 'Raider',
+  quote: 'Wheres my kaboddles'
+}];
+
 var globalState = exports.globalState = {
   count: 0,
-  companyInfo: companyInfo
+  companyInfo: companyInfo,
+  specialMenuData: specialMenuData,
+  reviews: reviews,
+  randomQuote: randomQuote
 };
 
 /***/ }),
@@ -629,6 +692,38 @@ function SpecialMenu(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var loopMenu = function loopMenu() {
+    return state.specialMenuData.map(function (item) {
+      return (0, _hyperapp.h)(
+        "div",
+        { "class": "col-md-4" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "box" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "box-img" },
+            "  ",
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "price-circle" },
+              item.price
+            )
+          ),
+          (0, _hyperapp.h)(
+            "span",
+            { "class": "title" },
+            item.title
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "details" },
+            item.description
+          )
+        )
+      );
+    });
+  };
   return (0, _hyperapp.h)(
     "section",
     { id: "SpecialMenu" },
@@ -648,90 +743,7 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "div",
         { "class": "row boxes" },
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        )
+        loopMenu()
       ),
       (0, _hyperapp.h)(
         "a",
