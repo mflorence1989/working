@@ -111,7 +111,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var globalState = exports.globalState = {
-  count: 0
+  count: 0,
+  companyInfo: companyInfo
+};
+
+var companyInfo = {
+  title: 'LeftOvers',
+  phone: '267-642-9542',
+  location: 'Philadelphia,PA'
 };
 
 /***/ }),
@@ -294,7 +301,7 @@ function Footer(_ref) {
           (0, _hyperapp.h)(
             "a",
             { href: "http://www.facebook.com", target: "new" },
-            (0, _hyperapp.h)("i", { "class": "fab fa-facebook-square" })
+            (0, _hyperapp.h)("i", { "class": "fas fa-camera-retro" })
           )
         ),
         (0, _hyperapp.h)(
