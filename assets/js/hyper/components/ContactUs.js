@@ -11,7 +11,7 @@ export default function ContactUs({state, actions}) {
   <div class="row">
   <div class="col-md-6">
   <div class="title">
-  Philadelphia,Pa
+  {state.companyInfo.location}
   </div>
   <h6 class="Address">
   900 Bridge Street<br/>
@@ -28,7 +28,7 @@ export default function ContactUs({state, actions}) {
   Phone:
   </h6>
   <div class="title">
-  (267) - 642 - 9542
+  {state.companyInfo.phone}
   </div>
   <h6>
   Lunch Service:

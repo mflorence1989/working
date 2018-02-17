@@ -110,15 +110,81 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var globalState = exports.globalState = {
-  count: 0,
-  companyInfo: companyInfo
-};
-
 var companyInfo = {
   title: 'LeftOvers',
   phone: '267-642-9542',
   location: 'Philadelphia,PA'
+};
+
+var specialMenuData = [{
+  title: 'Super BBQ Grill NO FUMA ',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}, {
+  title: 'Fried Lamb Chops',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}, {
+  title: 'Baked Chicken',
+  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
+  price: '$25'
+}];
+
+var reviewsData = [{
+  company: 'The Food Network',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexil,lologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'NBC',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'Bet',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'ABC',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}, {
+  company: 'CBS',
+  author: 'Chef Mario',
+  authorInfo: ' Winner Of The Chef Masters',
+  highlights: 'Best Restaurant in Philadelphia area',
+  review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
+}];
+
+var randomQuoteData = [{
+  author: 'Chef Mario',
+  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+}, {
+  author: 'Chef Mario',
+  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+}, {
+  author: 'Chef Tailas',
+  quote: 'Good Grub'
+}, {
+  author: 'Raider',
+  quote: 'Wheres my kaboddles'
+}];
+
+var globalState = exports.globalState = {
+  count: 0,
+  companyInfo: companyInfo,
+  specialMenuData: specialMenuData,
+  reviewsData: reviewsData,
+  randomQuoteData: randomQuoteData,
+  reviewStatus: {
+    currentReview: 4
+  }
 };
 
 /***/ }),
@@ -168,7 +234,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "Philadelphia,Pa"
+              state.companyInfo.location
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -204,7 +270,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "div",
               { "class": "title" },
-              "(267) - 642 - 9542"
+              state.companyInfo.phone
             ),
             (0, _hyperapp.h)(
               "h6",
@@ -541,6 +607,51 @@ function Reviews(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+
+  var currentReview = function currentReview() {
+    return (0, _hyperapp.h)(
+      "div",
+      null,
+      (0, _hyperapp.h)(
+        "h5",
+        { "class": "comp-title" },
+        "Reviews"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].company
+      ),
+      (0, _hyperapp.h)(
+        "h4",
+        null,
+        "\"",
+        state.reviewsData[state.reviewStatus.currentReview].highlights,
+        "\""
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].review,
+        " "
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "author" },
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          state.reviewsData[state.reviewStatus.currentReview].author
+        ),
+        " -",
+        (0, _hyperapp.h)(
+          "em",
+          null,
+          state.reviewsData[state.reviewStatus.currentReview].authorInfo
+        )
+      )
+    );
+  };
   return (0, _hyperapp.h)(
     "section",
     { id: "Reviews" },
@@ -562,46 +673,12 @@ function Reviews(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "h5",
-            { "class": "comp-title" },
-            "Reviews"
-          ),
-          (0, _hyperapp.h)(
-            "h2",
-            null,
-            "The Food Network"
-          ),
-          (0, _hyperapp.h)(
-            "h4",
-            null,
-            "\"Best Restaurant in Philadelphia area\""
-          ),
-          (0, _hyperapp.h)(
-            "p",
-            null,
-            "1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway "
-          ),
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "author" },
-            (0, _hyperapp.h)(
-              "strong",
-              null,
-              "OG ROE"
-            ),
-            " -",
-            (0, _hyperapp.h)(
-              "em",
-              null,
-              " Winner of the chef masters."
-            )
-          ),
+          currentReview(),
           (0, _hyperapp.h)(
             "div",
             { "class": "arrows" },
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left", "aria-hidden": "true" }),
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right ready", "aria-hidden": "true" })
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
           )
         )
       )
@@ -629,6 +706,38 @@ function SpecialMenu(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+  var loopMenu = function loopMenu() {
+    return state.specialMenuData.map(function (item) {
+      return (0, _hyperapp.h)(
+        "div",
+        { "class": "col-md-4" },
+        (0, _hyperapp.h)(
+          "div",
+          { "class": "box" },
+          (0, _hyperapp.h)(
+            "div",
+            { "class": "box-img" },
+            "  ",
+            (0, _hyperapp.h)(
+              "div",
+              { "class": "price-circle" },
+              item.price
+            )
+          ),
+          (0, _hyperapp.h)(
+            "span",
+            { "class": "title" },
+            item.title
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            { "class": "details" },
+            item.description
+          )
+        )
+      );
+    });
+  };
   return (0, _hyperapp.h)(
     "section",
     { id: "SpecialMenu" },
@@ -648,90 +757,7 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "div",
         { "class": "row boxes" },
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        ),
-        (0, _hyperapp.h)(
-          "div",
-          { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "box" },
-            (0, _hyperapp.h)(
-              "div",
-              { "class": "box-img" },
-              "  ",
-              (0, _hyperapp.h)(
-                "div",
-                { "class": "price-circle" },
-                "$25"
-              )
-            ),
-            (0, _hyperapp.h)(
-              "span",
-              { "class": "title" },
-              "Super BBQ Grill NO FUMA "
-            ),
-            (0, _hyperapp.h)(
-              "p",
-              { "class": "details" },
-              "Fried eggs, steak, papafritas or baked potatoes, side of vegetables"
-            )
-          )
-        )
+        loopMenu()
       ),
       (0, _hyperapp.h)(
         "a",
@@ -779,7 +805,7 @@ function TopImg(_ref) {
         (0, _hyperapp.h)(
           "h1",
           null,
-          "LEFTOVERS"
+          state.companyInfo.title
         )
       ),
       (0, _hyperapp.h)(
@@ -847,7 +873,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _hyperapp.app)({
-  state: { globalState: _globalState.globalState },
+  state: _globalState.globalState,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },
