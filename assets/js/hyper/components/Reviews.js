@@ -28,7 +28,8 @@ export default function Reviews({state, actions}) {
 <div class="arrows">
 <i class={`fa fa-arrow-left ${(state.reviewStatus.currentReview > 0) ? 'ready' :
 ''}` } aria-hidden="true"></i>
-<i class={`fa fa-arrow-right ${(state.reviewStatus.currentReview ==
+<i onclick={actions.reviewRight}
+ class={`fa fa-arrow-right ${(state.reviewStatus.currentReview ==
 (state.reviewsData.length - 1)) ? '' :
 'ready'}`} aria-hidden="true"></i>
 </div>

@@ -18,13 +18,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var actions = exports.actions = {
-  up: up,
+  reviewRight: reviewRight,
   intro: intro,
   showMenu: showMenu
 };
 
-function up(state, actions) {
-  return { count: state.count + 1 };
+function reviewRight(state, actions) {
+  return { reviewStatus: {
+      currentReview: state.reviewStatus.currentReview + 1
+    } };
 }
 
 function showMenu() {}
@@ -183,7 +185,7 @@ var globalState = exports.globalState = {
   reviewsData: reviewsData,
   randomQuoteData: randomQuoteData,
   reviewStatus: {
-    currentReview: 4
+    currentReview: 0
   }
 };
 
@@ -678,7 +680,8 @@ function Reviews(_ref) {
             "div",
             { "class": "arrows" },
             (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
+            (0, _hyperapp.h)("i", { onclick: actions.reviewRight,
+              "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
           )
         )
       )

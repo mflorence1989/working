@@ -1,12 +1,14 @@
 export const actions = {
-  up,
+  reviewRight,
   intro,
   showMenu
 }
 
-function up (state, actions) {
+function reviewRight (state, actions) {
   return (
-    {count: state.count + 1}
+    {reviewStatus:{
+      currentReview: state.reviewStatus.currentReview + 1
+    }}
   )
 }
 
