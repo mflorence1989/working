@@ -22,7 +22,7 @@ price: '$25'
 },
 ]
 
-var reviews = [
+var reviewsData = [
   {
     company:'The Food Network',
     author:'Chef Mario',
@@ -60,7 +60,7 @@ review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vex
 },
 ]
 
-var randomQuote = [
+var randomQuoteData = [
   {
     author: 'Chef Mario',
     quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
@@ -79,10 +79,14 @@ var randomQuote = [
 },
 ]
 
+
 export const globalState = {
   count: 0,
   companyInfo,
   specialMenuData,
-  reviews,
-  randomQuote
+  reviewsData,
+  randomQuoteData,
+  reviewStatus: {
+    currentReview: 4,
+  }
 }

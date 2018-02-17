@@ -130,7 +130,7 @@ var specialMenuData = [{
   price: '$25'
 }];
 
-var reviews = [{
+var reviewsData = [{
   company: 'The Food Network',
   author: 'Chef Mario',
   authorInfo: ' Winner Of The Chef Masters',
@@ -162,7 +162,7 @@ var reviews = [{
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }];
 
-var randomQuote = [{
+var randomQuoteData = [{
   author: 'Chef Mario',
   quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
 }, {
@@ -180,8 +180,11 @@ var globalState = exports.globalState = {
   count: 0,
   companyInfo: companyInfo,
   specialMenuData: specialMenuData,
-  reviews: reviews,
-  randomQuote: randomQuote
+  reviewsData: reviewsData,
+  randomQuoteData: randomQuoteData,
+  reviewStatus: {
+    currentReview: 4
+  }
 };
 
 /***/ }),
@@ -604,6 +607,51 @@ function Reviews(_ref) {
   var state = _ref.state,
       actions = _ref.actions;
 
+
+  var currentReview = function currentReview() {
+    return (0, _hyperapp.h)(
+      "div",
+      null,
+      (0, _hyperapp.h)(
+        "h5",
+        { "class": "comp-title" },
+        "Reviews"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].company
+      ),
+      (0, _hyperapp.h)(
+        "h4",
+        null,
+        "\"",
+        state.reviewsData[state.reviewStatus.currentReview].highlights,
+        "\""
+      ),
+      (0, _hyperapp.h)(
+        "p",
+        null,
+        state.reviewsData[state.reviewStatus.currentReview].review,
+        " "
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { "class": "author" },
+        (0, _hyperapp.h)(
+          "strong",
+          null,
+          state.reviewsData[state.reviewStatus.currentReview].author
+        ),
+        " -",
+        (0, _hyperapp.h)(
+          "em",
+          null,
+          state.reviewsData[state.reviewStatus.currentReview].authorInfo
+        )
+      )
+    );
+  };
   return (0, _hyperapp.h)(
     "section",
     { id: "Reviews" },
@@ -625,46 +673,12 @@ function Reviews(_ref) {
         (0, _hyperapp.h)(
           "div",
           { "class": "col-md-4" },
-          (0, _hyperapp.h)(
-            "h5",
-            { "class": "comp-title" },
-            "Reviews"
-          ),
-          (0, _hyperapp.h)(
-            "h2",
-            null,
-            "The Food Network"
-          ),
-          (0, _hyperapp.h)(
-            "h4",
-            null,
-            "\"Best Restaurant in Philadelphia area\""
-          ),
-          (0, _hyperapp.h)(
-            "p",
-            null,
-            "1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway "
-          ),
-          (0, _hyperapp.h)(
-            "div",
-            { "class": "author" },
-            (0, _hyperapp.h)(
-              "strong",
-              null,
-              "OG ROE"
-            ),
-            " -",
-            (0, _hyperapp.h)(
-              "em",
-              null,
-              " Winner of the chef masters."
-            )
-          ),
+          currentReview(),
           (0, _hyperapp.h)(
             "div",
             { "class": "arrows" },
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left", "aria-hidden": "true" }),
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right ready", "aria-hidden": "true" })
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
+            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
           )
         )
       )

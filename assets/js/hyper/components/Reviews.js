@@ -1,6 +1,18 @@
 import {h, app} from 'hyperapp'
 
 export default function Reviews({state, actions}) {
+
+  var currentReview = function(){
+    return(
+      <div>
+      <h5 class="comp-title">Reviews</h5>
+      <h2>{state.reviewsData[state.reviewStatus.currentReview].company}</h2>
+      <h4>"{state.reviewsData[state.reviewStatus.currentReview].highlights}"</h4>
+      <p>{state.reviewsData[state.reviewStatus.currentReview].review} </p>
+      <div class="author"><strong>{state.reviewsData[state.reviewStatus.currentReview].author}</strong> -<em>{state.reviewsData[state.reviewStatus.currentReview].authorInfo}</em></div>
+      </div>
+    )
+  }
   return (
   <section id="Reviews">
   <div class="container">
@@ -12,18 +24,16 @@ export default function Reviews({state, actions}) {
 </div>
   </div>
   <div class="col-md-4">
-<h5 class="comp-title">Reviews</h5>
-<h2>The Food Network</h2>
-<h4>"Best Restaurant in Philadelphia area"</h4>
-<p>1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway </p>
-<div class="author"><strong>OG ROE</strong> -<em> Winner of the chef masters.</em></div>
+{currentReview()}
 <div class="arrows">
-<i class="fa fa-arrow-left" aria-hidden="true"></i>
-<i class="fa fa-arrow-right ready" aria-hidden="true"></i>
+<i class={`fa fa-arrow-left ${(state.reviewStatus.currentReview > 0) ? 'ready' :
+''}` } aria-hidden="true"></i>
+<i class={`fa fa-arrow-right ${(state.reviewStatus.currentReview ==
+(state.reviewsData.length - 1)) ? '' :
+'ready'}`} aria-hidden="true"></i>
 </div>
 </div>
 </div>
-
 </div>
   </section>
   )
