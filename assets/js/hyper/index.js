@@ -17,7 +17,7 @@ app({
       console.groupEnd()
     },
     load(state, actions) {
-      actions.intro()
+      
     }
   },
   mixins: [devtools()]
