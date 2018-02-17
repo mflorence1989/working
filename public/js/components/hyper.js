@@ -17,22 +17,23 @@ webpackJsonp([0],[
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var actions = exports.actions = {
-  up: up,
-  intro: intro,
-  showMenu: showMenu
+
+var reviewLeft = function reviewLeft(state, actions) {
+  return { reviewStatus: {
+      currentReview: state.reviewStatus.currentReview - 1
+    } };
 };
 
-function up(state, actions) {
-  return { count: state.count + 1 };
-}
+var reviewRight = function reviewRight(state, actions) {
+  return { reviewStatus: {
+      currentReview: state.reviewStatus.currentReview + 1
+    } };
+};
+var actions = exports.actions = {
+  reviewLeft: reviewLeft,
+  reviewRight: reviewRight
 
-function showMenu() {}
-
-function intro(state, actions) {
-  console.log('Just ran my first action');
-  return { count: state.count + 1 };
-}
+};
 
 /***/ }),
 /* 10 */
@@ -183,7 +184,7 @@ var globalState = exports.globalState = {
   reviewsData: reviewsData,
   randomQuoteData: randomQuoteData,
   reviewStatus: {
-    currentReview: 4
+    currentReview: 0
   }
 };
 
@@ -652,6 +653,22 @@ function Reviews(_ref) {
       )
     );
   };
+  var leftClickBTN = function leftClickBTN() {
+    if (state.reviewStatus.currentReview == 0) {
+      console.log('do nothing');
+    } else {
+      actions.reviewLeft();
+    }
+  };
+
+  var rightClickBTN = function rightClickBTN() {
+    if (state.reviewStatus.currentReview == state.reviewsData.length - 1) {
+      console.log('do nothing');
+    } else {
+      actions.reviewRight();
+    }
+  };
+
   return (0, _hyperapp.h)(
     "section",
     { id: "Reviews" },
@@ -677,8 +694,10 @@ function Reviews(_ref) {
           (0, _hyperapp.h)(
             "div",
             { "class": "arrows" },
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
-            (0, _hyperapp.h)("i", { "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
+            (0, _hyperapp.h)("i", { onclick: leftClickBTN,
+              "class": "fa fa-arrow-left " + (state.reviewStatus.currentReview > 0 ? 'ready' : ''), "aria-hidden": "true" }),
+            (0, _hyperapp.h)("i", { onclick: rightClickBTN,
+              "class": "fa fa-arrow-right " + (state.reviewStatus.currentReview == state.reviewsData.length - 1 ? '' : 'ready'), "aria-hidden": "true" })
           )
         )
       )
@@ -889,9 +908,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       console.log("Data:", data);
       console.groupEnd();
     },
-    load: function load(state, actions) {
-      actions.intro();
-    }
+    load: function load(state, actions) {}
   },
   mixins: [(0, _hyperappReduxDevtools2.default)()]
 });

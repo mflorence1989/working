@@ -13,6 +13,24 @@ export default function Reviews({state, actions}) {
       </div>
     )
   }
+  var leftClickBTN = function(){
+    if(state.reviewStatus.currentReview == 0 ){
+      console.log('do nothing')
+    }else{
+      actions.reviewLeft()
+    }
+  }
+
+
+
+var rightClickBTN = function(){
+  if(state.reviewStatus.currentReview == (state.reviewsData.length - 1)){
+    console.log('do nothing')
+  }else{
+    actions.reviewRight()
+  }
+}
+
   return (
   <section id="Reviews">
   <div class="container">
@@ -26,9 +44,11 @@ export default function Reviews({state, actions}) {
   <div class="col-md-4">
 {currentReview()}
 <div class="arrows">
-<i class={`fa fa-arrow-left ${(state.reviewStatus.currentReview > 0) ? 'ready' :
+<i onclick={leftClickBTN}
+class={`fa fa-arrow-left ${(state.reviewStatus.currentReview > 0) ? 'ready' :
 ''}` } aria-hidden="true"></i>
-<i class={`fa fa-arrow-right ${(state.reviewStatus.currentReview ==
+<i onclick={rightClickBTN}
+ class={`fa fa-arrow-right ${(state.reviewStatus.currentReview ==
 (state.reviewsData.length - 1)) ? '' :
 'ready'}`} aria-hidden="true"></i>
 </div>
