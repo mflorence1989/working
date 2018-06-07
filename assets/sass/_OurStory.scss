@@ -10,25 +10,39 @@
     }
   }
   .reserve-btn{
-    padding: 20px 40px;
-    //min-width: 200px;
-    display: inline-block;
-    border: 1px solid $black;
-    text-align: center;
-    text-decoration: none;
-    color: $black;
-    text-transform: uppercase;
-    font-family: $displayFont;
-    transition: all .5s ease-in-out;
+    -moz-box-shadow: 2px 4px 9px 2px #8a2a21;
+    -webkit-box-shadow: 2px 4px 9px 2px #8a2a21;
+    box-shadow: 2px 4px 9px 2px #8a2a21;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+    background-color:#c62d1f;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family:$textFont;
+    font-size:17px;
+    padding:11px 38px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+
     &:hover{
       background: $red;
       color: white;
     }
   }
   .video-img{
-    max-width: 4000px;
+    max-width: 400px;
     height: 550px;
-    background: url("https://cdn-images-1.medium.com/max/1920/1*XDjwcMVE0VsFGzdoCEJULA.jpeg");
+    background: url("https://thumb7.shutterstock.com/display_pic_with_logo/210376/246995734/stock-photo-black-doctor-portrait-isolated-on-white-246995734.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,7 +1,7 @@
 {
-  "name": "restaurant",
+  "name": "Sculpting",
   "version": "1.0.0",
-  "description": "restaurant using hyperjs",
+  "description": "Sculpting using hyperjs",
   "main": "gulpfile.js",
   "dependencies": {
     "axios": "^0.16.1",
@@ -41,17 +41,11 @@
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codingphasedotcom/hyperapp-starterkit.git"
-  },
+
   "keywords": [
     "hyperapp"
   ],
-  "author": "joe santos garcia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codingphasedotcom/hyperapp-starterkit/issues"
-  },
-  "homepage": "https://github.com/codingphasedotcom/hyperapp-starterkit#readme"
+  "author": "mario florence",
+  "license": "ISC"
+
 }

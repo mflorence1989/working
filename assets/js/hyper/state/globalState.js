@@ -1,81 +1,81 @@
 var companyInfo = {
-  title: 'LeftOvers',
+  title: 'Sculpting',
   phone: '267-642-9542',
   location:'Philadelphia,PA',
 }
 
-var specialMenuData = [
+var specialTreatmentData = [
   {
-  title:'Super BBQ Grill NO FUMA ',
-  description:'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-  price: '$25'
+  title:'Facial Treatment ',
+  description:'Full wrinkle removal & Skin tightening',
+  price: '$250'
 },
 {
-title:'Fried Lamb Chops',
-description:'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-price: '$25'
+  title:'Facial Treatment ',
+  description:'Full wrinkle removal & Skin tightening',
+  price: '$250'
 },
 {
-title:'Baked Chicken',
-description:'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-price: '$25'
+  title:'Facial Treatment ',
+  description:'Full wrinkle removal & Skin tightening',
+  price: '$250'
 },
 ]
 
 var reviewsData = [
   {
-    company:'The Food Network',
-    author:'Chef Mario',
-    authorInfo:' Winner Of The Chef Masters',
-    highlights:'Best Restaurant in Philadelphia area',
+    company:'Cosemtics',
+    author:'Dr. Regis Sams',
+    authorInfo:' Reliance CFO',
+    highlights:'Best medical practice in Atlantic area',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexil,lologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 },
 {
-  company:'NBC',
-  author:'Chef Mario',
-  authorInfo:' Winner Of The Chef Masters',
-  highlights:'Best Restaurant in Philadelphia area',
+  company:'Laser Lipo',
+  author:'Dr. Michael John',
+  authorInfo:' Accreditted practitioner',
+  highlights:'Best practice in Philadelphia area',
 review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 },
 {
-  company:'Bet',
-  author:'Chef Mario',
-  authorInfo:' Winner Of The Chef Masters',
-  highlights:'Best Restaurant in Philadelphia area',
+  company:'Reliance',
+  author:'Dr. Trocki',
+  authorInfo:' Accreditted suregeon',
+  highlights:'Best suregeon Delaware area',
 review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 },
 {
   company:'ABC',
-  author:'Chef Mario',
-  authorInfo:' Winner Of The Chef Masters',
-  highlights:'Best Restaurant in Philadelphia area',
+  author:'Chris Daley',
+  authorInfo:' CEO',
+  highlights:'CEO of ABC',
 review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 },
 {
   company:'CBS',
-  author:'Chef Mario',
-  authorInfo:' Winner Of The Chef Masters',
-  highlights:'Best Restaurant in Philadelphia area',
+  author:'Douglas Bell',
+  authorInfo:' CEO',
+  highlights:'CEO of CBS ',
 review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 },
 ]
 
 var randomQuoteData = [
   {
-    author: 'Chef Mario',
-    quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+    author: 'Doctor Keith',
+    quote: 'Will refer others.'
 },
 {
-  author: 'Chef Mario',
-  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+  author: 'Doctor Mario',
+  quote: 'nice work'
 },
 {
-  author: 'Chef Tailas',
-  quote: 'Good Grub'
+  author: 'doctor green',
+  quote: 'excellent work'
 },
 {
-  author: 'Raider',
-  quote: 'Wheres my kaboddles'
+  author: 'doctor smith',
+  quote: 'Grea work'
 },
 ]
 
@@ -83,7 +83,7 @@ var randomQuoteData = [
 export const globalState = {
   count: 0,
   companyInfo,
-  specialMenuData,
+  specialTreatmentData,
   reviewsData,
   randomQuoteData,
   reviewStatus: {

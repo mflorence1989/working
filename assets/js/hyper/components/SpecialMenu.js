@@ -2,7 +2,7 @@ import {h, app} from 'hyperapp'
 
 export default function SpecialMenu({state, actions}) {
   var loopMenu = function(){
-    return state.specialMenuData.map(function(item){
+    return state.specialTreatmentData.map(function(item){
       return(
         <div class="col-md-4">
         <div class="box">
@@ -20,8 +20,8 @@ export default function SpecialMenu({state, actions}) {
   return (
   <section id="SpecialMenu">
   <div class="container">
-  <h5 class="comp-title">Special Menu</h5>
-  <h2>Delicious Flavour Of Autumn</h2>
+  <h5 class="comp-title">Special Treatments</h5>
+  <h2>Body Mind Spirit</h2>
   <div class="row boxes">
 
 {loopMenu()}
@@ -31,10 +31,8 @@ export default function SpecialMenu({state, actions}) {
 
 
   </div>
-  <a href="#" class="link">View Full Menu </a>
+  <a href="#" class="link"> Procedures </a>
   </div>
   </section>
   )
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>

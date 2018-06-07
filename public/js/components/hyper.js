@@ -95,8 +95,8 @@ function App(_ref) {
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Footer2.default, { state: state, actions: actions })
   );
 }
@@ -112,75 +112,75 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var companyInfo = {
-  title: 'LeftOvers',
+  title: 'Sculpting',
   phone: '267-642-9542',
   location: 'Philadelphia,PA'
 };
 
-var specialMenuData = [{
-  title: 'Super BBQ Grill NO FUMA ',
-  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-  price: '$25'
+var specialTreatmentData = [{
+  title: 'Facial Treatment ',
+  description: 'Full wrinkle removal & Skin tightening',
+  price: '$250'
 }, {
-  title: 'Fried Lamb Chops',
-  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-  price: '$25'
+  title: 'Facial Treatment ',
+  description: 'Full wrinkle removal & Skin tightening',
+  price: '$250'
 }, {
-  title: 'Baked Chicken',
-  description: 'Fried eggs, steak, papafritas or baked potatoes, side of vegetables',
-  price: '$25'
+  title: 'Facial Treatment ',
+  description: 'Full wrinkle removal & Skin tightening',
+  price: '$250'
 }];
 
 var reviewsData = [{
-  company: 'The Food Network',
-  author: 'Chef Mario',
-  authorInfo: ' Winner Of The Chef Masters',
-  highlights: 'Best Restaurant in Philadelphia area',
+  company: 'Cosemtics',
+  author: 'Dr. Regis Sams',
+  authorInfo: ' Reliance CFO',
+  highlights: 'Best medical practice in Atlantic area',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexil,lologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }, {
-  company: 'NBC',
-  author: 'Chef Mario',
-  authorInfo: ' Winner Of The Chef Masters',
-  highlights: 'Best Restaurant in Philadelphia area',
+  company: 'Laser Lipo',
+  author: 'Dr. Michael John',
+  authorInfo: ' Accreditted practitioner',
+  highlights: 'Best practice in Philadelphia area',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }, {
-  company: 'Bet',
-  author: 'Chef Mario',
-  authorInfo: ' Winner Of The Chef Masters',
-  highlights: 'Best Restaurant in Philadelphia area',
+  company: 'Reliance',
+  author: 'Dr. Trocki',
+  authorInfo: ' Accreditted suregeon',
+  highlights: 'Best suregeon Delaware area',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }, {
   company: 'ABC',
-  author: 'Chef Mario',
-  authorInfo: ' Winner Of The Chef Masters',
-  highlights: 'Best Restaurant in Philadelphia area',
+  author: 'Chris Daley',
+  authorInfo: ' CEO',
+  highlights: 'CEO of ABC',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }, {
   company: 'CBS',
-  author: 'Chef Mario',
-  authorInfo: ' Winner Of The Chef Masters',
-  highlights: 'Best Restaurant in Philadelphia area',
+  author: 'Douglas Bell',
+  authorInfo: ' CEO',
+  highlights: 'CEO of CBS ',
   review: '1 bespoke glossier pinterest kogi schlitz, kombucha vinyl biodiesel vexillologist. Polaroid gentrify kickstarter shaman roof party echo park irony. Tumblr af truffaut keytar. Subway'
 }];
 
 var randomQuoteData = [{
-  author: 'Chef Mario',
-  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+  author: 'Doctor Keith',
+  quote: 'Will refer others.'
 }, {
-  author: 'Chef Mario',
-  quote: 'Sometimes The Best Chef Aint The Fattest Bitch In The Room'
+  author: 'Doctor Mario',
+  quote: 'nice work'
 }, {
-  author: 'Chef Tailas',
-  quote: 'Good Grub'
+  author: 'doctor green',
+  quote: 'excellent work'
 }, {
-  author: 'Raider',
-  quote: 'Wheres my kaboddles'
+  author: 'doctor smith',
+  quote: 'Grea work'
 }];
 
 var globalState = exports.globalState = {
   count: 0,
   companyInfo: companyInfo,
-  specialMenuData: specialMenuData,
+  specialTreatmentData: specialTreatmentData,
   reviewsData: reviewsData,
   randomQuoteData: randomQuoteData,
   reviewStatus: {
@@ -221,7 +221,7 @@ function ContactUs(_ref) {
       (0, _hyperapp.h)(
         "h2",
         null,
-        "Delicious Flavour Of Autumn"
+        "Every Womans Place"
       ),
       (0, _hyperapp.h)(
         "div",
@@ -255,8 +255,8 @@ function ContactUs(_ref) {
               " ",
               (0, _hyperapp.h)(
                 "a",
-                { href: "mailto:@leftovers.com" },
-                "leftovers.com"
+                { href: "mailto:@lindastanley.com" },
+                "lindastanley.com"
               )
             )
           ),
@@ -276,7 +276,7 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "h6",
               null,
-              "Lunch Service:"
+              "Wellness Service:"
             ),
             (0, _hyperapp.h)(
               "p",
@@ -288,14 +288,14 @@ function ContactUs(_ref) {
             (0, _hyperapp.h)(
               "h6",
               null,
-              "Dinner Service:"
+              "Body Service:"
             ),
             (0, _hyperapp.h)(
               "p",
               null,
               "Daily",
               (0, _hyperapp.h)("br", null),
-              "from 6pm - 11pm"
+              "from 8am - 4pm"
             )
           )
         )
@@ -336,12 +336,12 @@ function Footer(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Our Story"
+          "Bio"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Special Menu"
+          "Treatments"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -351,7 +351,7 @@ function Footer(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Reservations"
+          "Consultation"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -438,20 +438,20 @@ function Header(_ref) {
       (0, _hyperapp.h)(
         "div",
         { "class": "logo" },
-        "Logo"
+        (0, _hyperapp.h)("i", { "class": "fas fa-user-md" })
       ),
       (0, _hyperapp.h)(
         "nav",
         null,
         (0, _hyperapp.h)(
           "a",
-          { href: "#" },
-          "Our Story"
+          { href: "/components/ourstory" },
+          "Bio"
         ),
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Special Menu"
+          "Treatments"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -461,7 +461,7 @@ function Header(_ref) {
         (0, _hyperapp.h)(
           "a",
           { href: "#" },
-          "Reservations"
+          "Consultation"
         ),
         (0, _hyperapp.h)(
           "a",
@@ -513,7 +513,7 @@ function OurStory(_ref) {
           (0, _hyperapp.h)(
             "h2",
             null,
-            "Cooking is the art of adjustment"
+            "Practice Dedicated to a Woman's Health"
           ),
           (0, _hyperapp.h)(
             "p",
@@ -523,17 +523,17 @@ function OurStory(_ref) {
           (0, _hyperapp.h)(
             "div",
             { "class": "quote" },
-            "\"Get you a Big ass Plate\" -",
+            "\"Mind Body Spirit\" -",
             (0, _hyperapp.h)(
               "strong",
               null,
-              " OG ROE"
+              " Dr. Linda Stanley"
             )
           ),
           (0, _hyperapp.h)(
             "a",
             { href: "#", "class": "reserve-btn" },
-            "Reserve"
+            "Contact"
           )
         ),
         (0, _hyperapp.h)(
@@ -569,7 +569,7 @@ function RandomQuote(_ref) {
   return (0, _hyperapp.h)(
     'section',
     { id: 'RandomQuote', style: {
-        background: 'url("http://www.spice-root.com/wp-content/uploads/2015/08/6817694-free-spices-wallpaper.jpg")'
+        background: 'url("https://www.reviewtrackers.com/wp-content/uploads/run-doctors-office-with-patient-feedback.jpg")'
       } },
     (0, _hyperapp.h)(
       'div',
@@ -577,12 +577,12 @@ function RandomQuote(_ref) {
       (0, _hyperapp.h)(
         'h1',
         null,
-        '"Sometimes the best chef aint the fattest bitch in the room"'
+        '"Practice Dedicated To A Womans Health"'
       ),
       (0, _hyperapp.h)(
         'span',
         { 'class': 'author' },
-        ' - Papa De Fuego'
+        ' - Dr Stanley'
       )
     )
   );
@@ -684,7 +684,7 @@ function Reviews(_ref) {
           (0, _hyperapp.h)(
             "div",
             { "class": "side-img" },
-            (0, _hyperapp.h)("img", { src: "https://stjohnsmontgomery.org/wp-content/uploads/chef.gif" })
+            (0, _hyperapp.h)("img", { src: "https://thumbs.dreamstime.com/b/doctor-black-woman-22447586.jpg" })
           )
         ),
         (0, _hyperapp.h)(
@@ -726,7 +726,7 @@ function SpecialMenu(_ref) {
       actions = _ref.actions;
 
   var loopMenu = function loopMenu() {
-    return state.specialMenuData.map(function (item) {
+    return state.specialTreatmentData.map(function (item) {
       return (0, _hyperapp.h)(
         "div",
         { "class": "col-md-4" },
@@ -766,12 +766,12 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "h5",
         { "class": "comp-title" },
-        "Special Menu"
+        "Special Treatments"
       ),
       (0, _hyperapp.h)(
         "h2",
         null,
-        "Delicious Flavour Of Autumn"
+        "Body Mind Spirit"
       ),
       (0, _hyperapp.h)(
         "div",
@@ -781,13 +781,11 @@ function SpecialMenu(_ref) {
       (0, _hyperapp.h)(
         "a",
         { href: "#", "class": "link" },
-        "View Full Menu "
+        " Procedures "
       )
     )
   );
 }
-// <Header state={state} actions={actions}/>
-// <Button state={state} actions={actions}/>
 
 /***/ }),
 /* 20 */
@@ -836,7 +834,7 @@ function TopImg(_ref) {
           (0, _hyperapp.h)(
             "div",
             { "class": "booking" },
-            " Book Table Directly "
+            " Schedule Appointment "
           ),
           (0, _hyperapp.h)(
             "h2",

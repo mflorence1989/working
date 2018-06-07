@@ -5,11 +5,11 @@ export default function Footer({state, actions}) {
   <footer>
   <div class="container">
   <nav class="menu">
-  <a href="#">Our Story</a>
-  <a href="#">Special Menu</a>
+  <a href="#">Bio</a>
+  <a href="#">Treatments</a>
   <a href="#">Reviews</a>
-  <a href="#">Reservations</a>
-    <a href="#">Contact Us</a>
+  <a href="#">Consultation</a>
+  <a href="#">Contact Us</a>
   </nav>
 
   <ul class="social-media">

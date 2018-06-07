@@ -15,7 +15,7 @@ export default function TopImg({state, actions}) {
 
   <div class="contact-info">
   <div class="container">
-  <div class="booking"> Book Table Directly </div>
+  <div class="booking"> Schedule Appointment </div>
   <h2>(718) - 642 - 9542</h2>
   <div class="hours">
   Opening Hours <strong> Mon - Fri:</strong> 9am -9pm

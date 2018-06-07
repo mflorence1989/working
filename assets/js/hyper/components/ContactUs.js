@@ -5,7 +5,7 @@ export default function ContactUs({state, actions}) {
   <section id="ContactUs">
   <div class="container">
   <h5 class="comp-title">Contact Us</h5>
-  <h2>Delicious Flavour Of Autumn</h2>
+  <h2>Every Womans Place</h2>
 
   <div class="box">
   <div class="row">
@@ -18,7 +18,7 @@ export default function ContactUs({state, actions}) {
   Summerdale,Pa 19124
   </h6>
   <p>
-  <strong>email: </strong> <a href="mailto:@leftovers.com">leftovers.com</a>
+  <strong>email: </strong> <a href="mailto:@lindastanley.com">lindastanley.com</a>
   </p>
 
   </div>
@@ -31,18 +31,18 @@ export default function ContactUs({state, actions}) {
   {state.companyInfo.phone}
   </div>
   <h6>
-  Lunch Service:
+  Wellness Service:
   </h6>
   <p>
   Friday, Saturday and Sunday<br/>
   from 12pm - 130pm
   </p>
   <h6>
-  Dinner Service:
+  Body Service:
   </h6>
   <p>
   Daily<br/>
-  from 6pm - 11pm
+  from 8am - 4pm
   </p>
 
   </div>

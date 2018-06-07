@@ -4,12 +4,14 @@ export default function Header({state, actions}) {
   return (
   <header>
   <div class="container">
-  <div class="logo">Logo</div>
+  <div class="logo">
+  <i class="fas fa-user-md"></i>
+  </div>
   <nav>
-  <a href="#">Our Story</a>
-  <a href="#">Special Menu</a>
+  <a href="/components/ourstory">Bio</a>
+  <a href="#">Treatments</a>
   <a href="#">Reviews</a>
-  <a href="#">Reservations</a>
+  <a href="#">Consultation</a>
   <a href="#">Contact Us</a>
   </nav>
 </div>

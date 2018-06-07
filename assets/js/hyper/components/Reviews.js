@@ -38,7 +38,7 @@ var rightClickBTN = function(){
   <div class="col-md-8 side-img">
   <div class="side-img">
 
-  <img src="https://stjohnsmontgomery.org/wp-content/uploads/chef.gif"/>
+  <img src="https://thumbs.dreamstime.com/b/doctor-black-woman-22447586.jpg"/>
 </div>
   </div>
   <div class="col-md-4">
